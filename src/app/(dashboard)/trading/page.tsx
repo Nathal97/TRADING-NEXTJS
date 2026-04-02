@@ -18,6 +18,22 @@ export default function TradingPage() {
         </button>
       </div>
 
+      <div className="my-8 p-6 bg-blue-600/10 border border-blue-500/20 rounded-3xl">
+        <h3 className="text-blue-400 text-sm font-semibold mb-3 flex items-center gap-2">
+          <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+          Assistant IA Portefeuille
+        </h3>
+        <div className="relative">
+          <input 
+            type="text" 
+            placeholder="Ex: 'Quelle est ma performance sur le BTC ce mois-ci ?'"
+            className="w-full bg-[#0a0a0b] border border-white/10 rounded-2xl p-4 pl-6 text-sm focus:outline-none focus:border-blue-500 transition-all text-white"
+          />
+          <kbd className="absolute right-4 top-3.5 px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-gray-500">
+            CTRL + K
+          </kbd>
+        </div>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Graphique Principal (8 colonnes) */}
         <div className="lg:col-span-8 space-y-8">
