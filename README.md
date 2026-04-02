@@ -43,6 +43,12 @@ npm install
 npm run dev
 ```
 
+### 3. Consulter les pages
+
+http://localhost:3000/trading
+
+http://localhost:3000/portfolio
+
 ---
 
 ## 👤 Auteur
