@@ -1,6 +1,7 @@
 import { CryptoChart } from "@/src/components/charts/crypto-chart";
+import { AnimatedContainer } from "@/src/components/ui/animated-container";
 import { MOCK_ASSETS } from "@/src/constants/mock-data";
-import { ArrowUpRight, ArrowDownRight, Bell } from "lucide-react";
+import { ArrowUpRight, Bell } from "lucide-react";
 
 export default function TradingPage() {
   return (
@@ -47,24 +48,26 @@ export default function TradingPage() {
         <div className="lg:col-span-4 bg-[#161618] border border-white/5 p-6 rounded-3xl">
           <h3 className="text-lg font-semibold mb-6">Watchlist</h3>
           <div className="space-y-4">
-            {MOCK_ASSETS.map((asset) => (
-              <div key={asset.id} className="flex justify-between items-center p-4 rounded-2xl hover:bg-white/5 transition-all cursor-pointer group">
-                <div className="flex items-center gap-3">
-                   <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                     {asset.symbol[0]}
-                   </div>
-                   <div>
-                     <p className="font-medium">{asset.name}</p>
-                     <p className="text-xs text-gray-500 uppercase">{asset.symbol}</p>
-                   </div>
+            {MOCK_ASSETS.map((asset, index) => (
+              <AnimatedContainer key={asset.id} delay={0.5*index}>
+                <div key={asset.id} className="flex justify-between items-center p-4 rounded-2xl hover:bg-white/5 transition-all cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                      {asset.symbol[0]}
+                    </div>
+                    <div>
+                      <p className="font-medium">{asset.name}</p>
+                      <p className="text-xs text-gray-500 uppercase">{asset.symbol}</p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-semibold font-mono">${asset.price.toLocaleString()}</p>
+                    <p className={`text-xs ${asset.isPositive ? 'text-green-500' : 'text-red-500'}`}>
+                      {asset.change24h}
+                    </p>
+                  </div>
                 </div>
-                <div className="text-right">
-                   <p className="font-semibold font-mono">${asset.price.toLocaleString()}</p>
-                   <p className={`text-xs ${asset.isPositive ? 'text-green-500' : 'text-red-500'}`}>
-                     {asset.change24h}
-                   </p>
-                </div>
-              </div>
+              </AnimatedContainer>
             ))}
           </div>
         </div>
