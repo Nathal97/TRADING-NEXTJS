@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 CryptoDash Pro - Modern Trading Interface
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-blue?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-First, run the development server:
+**CryptoDash Pro** est une interface de trading haute performance conçue pour offrir une expérience utilisateur fluide et immersive. 
 
+---
+
+## ✨ Points Forts du Projet
+
+- **Architecture Pro :** Utilisation du dossier `/src` et des *Route Groups* `(dashboard)` pour une séparation nette des responsabilités.
+- **UI Moderne :** Design Dark Mode "Deep Black" avec composants atomiques stylisés via Tailwind CSS.
+- **Visualisation de Données :** Graphiques interactifs et animés utilisant **Recharts** avec dégradés néon.
+- **Performance :** Optimisé avec le rendu côté serveur (Server Components) et des Skeletons Screens pour le chargement.
+
+---
+
+## 🛠️ Stack Technique
+
+- **Framework :** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styles :** [Tailwind CSS](https://tailwindcss.com/)
+- **Icônes :** [Lucide React](https://lucide.dev/)
+- **Charts :** [Recharts](https://recharts.org/)
+- **Animations :** [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+## 🚀 Installation et Lancement
+
+Suivez ces étapes pour faire tourner le projet localement sur votre machine.
+
+### 1. Cloner le dépôt
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Nathal97/TRADING-NEXTJS.git
+cd crypto-dash-pro
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Installation dépendances et lancement du projet
+```bash
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👤 Auteur
 
-## Learn More
+**Nathalie** *M1 Computer Science Student | Apprentie Développeuse Fullstack & IA*
 
-To learn more about Next.js, take a look at the following resources:
+Développé avec passion dans le cadre de mon challenge **"30 Jours de Front-end Moderne"**. Mon objectif est de construire des interfaces performantes, accessibles et esthétiquement irréprochables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nathalie-razafimanantsoa-a065092b2)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nathal97)
+[![PortFolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=react&logoColor=white)](https://ton-portfolio.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛠️ Mes Compétences de Prédilection
+- **Frontend :** Next.js, React Native, Tailwind CSS, Framer Motion.
+- **Backend :** FastAPI, Python, SQL.
+- **IA/ML :** Scikit-Learn, Algorithmes Minimax, Neural Networks.
+- **Langues :** Français, Malagasy, Anglais, Mandarin (Débutant).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
